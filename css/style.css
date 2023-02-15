@@ -161,9 +161,7 @@ nav .menu-btn{
 
 
 
-@media(max-width:600px){
-    
-}
+
 
 @media(max-width:430px){
     .col button
@@ -173,9 +171,7 @@ nav .menu-btn{
     } 
 }
 
-@media(max-width:350px){
-    
-}
+
 
 
 /* about us */
@@ -240,8 +236,30 @@ nav .menu-btn{
 
 @media (max-width: 456px) {
     .about{
-        height: 135vh;
+        min-height: 145vh;
     }
+
+    .image-section img
+    {
+        padding-bottom: 1.5rem;
+    }
+
+    .content-section .content .button
+    {
+        margin-top: 30px;
+    }
+
+    .content-section .content h3
+    {
+        font-size: 19px;
+    }
+    
+    .content-section .content p
+    {
+        font-size: 13px;
+    }
+
+
 }
 
 @media(max-width:1024px){
@@ -259,7 +277,7 @@ nav .menu-btn{
 @media(max-width: 768px){
     .about
     {
-        height: 100vh;
+        min-height: 100vh;
     }
     .container1{
         width:80%;
@@ -536,15 +554,21 @@ nav .menu-btn{
 
 }
 
-@media (max-width: 480px){
-    .symptoms
+@media (max-width: 500px){
+    /* .symptoms
     {
-        height: 190vh;
+        min-height: 130vh;
+    } */
+
+    .symp-container
+    {
+        padding-bottom: 20rem;
     }
 
     .symptom
     {
         grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 1rem;
     }
 
     .symp-image
@@ -554,8 +578,9 @@ nav .menu-btn{
 
     .symp-image button
     {
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
+        margin-left: 1rem;
     }
 
     .symp-image img 
@@ -570,18 +595,18 @@ nav .menu-btn{
     }
 }
 
-@media (max-width: 1500px)
+@media (min-width: 1500px)
 {
     .symptoms
     {
-        height: 150vh;
+        min-height: 150vh;
     }
 }
 
-@media (max-width: 865px){
+@media (min-width: 900px){
     .symptoms
     {
-        height: 100vh;
+        min-height: 100vh;
     }
     .symptom
     {
@@ -1370,20 +1395,31 @@ textarea.input
 }
 
 @media (max-width: 486px) {
+    .footer
+    {
+        height: 120vh;
+    }
+
+    .box-right .box {
+        padding: 1rem;
+        padding-bottom: .2rem;
+        padding-top: .4rem;
+    }
+
     .box-left
     {
         width: 100%;
         padding: .2rem;
-        margin: 5rem;
-        transform: translate(-20%,-20%);
+        /* transform: translate(-20%,-20%); */
     }
 
     .box-right
     {
         display: grid;
-        transform: translate(1%,-20%);
+        /* transform: translate(1%,-20%); */
         width: 100%;
-        padding: 2.5rem;
+        padding: 3rem;
+        padding-bottom: 0.5rem;
     }
 
     .credit
